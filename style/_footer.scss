@@ -1,0 +1,95 @@
+footer{
+  background: url(../img/bg-footer.jpg) center/cover;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  @media screen and (max-width:900px) {
+    grid-template-columns: 1fr;
+    background: $color4;
+  }
+
+  & .footerLeft{
+    display: grid;
+    grid-template-columns: 20% 80%;
+
+    @media screen and (max-width:900px) {
+      display: none;
+    }
+
+    & .textLeft{
+      margin: 50px;
+
+      & h2{
+        font-family: allura, sans-serif;
+        text-transform: capitalize;
+        font-size: 2.5rem;
+        font-weight: normal;
+        color: $color3;
+        margin: 20px 0;
+      }
+
+      & p{
+        font-family: roboto, sans-serif;
+        color: rgb(167, 167, 167);
+        line-height: 40px;
+        
+      }
+    }
+  }
+
+  & .footerRight{
+    display: grid;
+    grid-template-columns: 80% 20%;
+
+    @media screen and (max-width:900px) {
+      grid-template-columns: 1fr;
+    }
+
+    & .textRight{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin: 50px;
+
+      & label{
+        display: block;
+        font-size: 1.2rem;
+        color: $color1;
+        text-transform: uppercase;
+        font-family: poppins, sans-serif;
+        margin: 30px 0;
+      }
+
+      & input{
+        width: 200px ;
+        padding: 10px;
+        background: none;
+        border: 0.5px solid $color3;
+        margin: 20px 0;
+
+        @media screen and (max-width:900px) {
+         text-align: center;
+        }
+        
+      }
+
+      & .socials{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        @media screen and (max-width:900px) {
+          width: 100%;
+          grid-template-columns: 40% 60%;
+        }
+        
+        & ul{
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          letter-spacing: 20px;
+          color: gray;                    
+        }
+      }
+    }
+  }
+}
