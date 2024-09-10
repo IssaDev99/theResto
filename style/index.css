@@ -291,11 +291,21 @@ main .menu nav ul {
           align-items: center;
   width: 70%;
   margin: 50px auto;
-  text-decoration: underline;
   color: #fafafa;
   text-transform: capitalize;
   font-family: roboto, sans-serif;
   line-height: 5px;
+}
+
+main .menu nav ul li {
+  border-bottom: 1px solid #fafafa;
+  padding: 10px;
+}
+
+@media screen and (max-width: 545px) {
+  main .menu nav ul li {
+    font-size: 0.6rem;
+  }
 }
 
 main .menu .gridMenu {
@@ -622,6 +632,12 @@ main .reservation .schedules {
   padding: 30px;
 }
 
+@media screen and (max-width: 500px) {
+  main .reservation .schedules {
+    padding: 10px;
+  }
+}
+
 main .reservation .schedules .opening {
   border: 1px dashed #fafafa;
 }
@@ -636,11 +652,23 @@ main .reservation .schedules h2 {
   margin: 30px;
 }
 
+@media screen and (max-width: 500px) {
+  main .reservation .schedules h2 {
+    font-size: 1rem;
+  }
+}
+
 main .reservation .schedules h2 #bigH2 {
   font-family: poppins, sans-serif;
   color: #fafafa;
   font-size: 1.5rem;
   text-transform: uppercase;
+}
+
+@media screen and (max-width: 500px) {
+  main .reservation .schedules h2 #bigH2 {
+    font-size: 1rem;
+  }
 }
 
 main .reservation .schedules img {
@@ -655,9 +683,21 @@ main .reservation .schedules h3 {
   margin: 20px 0;
 }
 
+@media screen and (max-width: 500px) {
+  main .reservation .schedules h3 {
+    font-size: 0.7rem;
+  }
+}
+
 main .reservation .schedules p {
   font-family: roboto, sans-serif;
   margin: 0 0 50px;
+}
+
+@media screen and (max-width: 500px) {
+  main .reservation .schedules p {
+    font-size: 0.7rem;
+  }
 }
 
 main .reservation .onlineBooking {
@@ -672,7 +712,13 @@ main .reservation .onlineBooking h2 {
   line-height: 35px;
   color: #a67246;
   font-weight: normal;
-  margin: 100px 0 50px;
+  margin: 100px auto 50px;
+}
+
+@media screen and (max-width: 500px) {
+  main .reservation .onlineBooking h2 {
+    font-size: 1.2rem;
+  }
 }
 
 main .reservation .onlineBooking h2 #bigH2 {
@@ -681,6 +727,12 @@ main .reservation .onlineBooking h2 #bigH2 {
   font-size: 2.5rem;
   font-weight: bold;
   text-transform: uppercase;
+}
+
+@media screen and (max-width: 500px) {
+  main .reservation .onlineBooking h2 #bigH2 {
+    font-size: 1.2rem;
+  }
 }
 
 main .reservation .onlineBooking img {
@@ -714,6 +766,12 @@ main .reservation .onlineBooking form select {
   margin: 0 auto;
 }
 
+@media screen and (max-width: 500px) {
+  main .reservation .onlineBooking form select {
+    width: 60%;
+  }
+}
+
 main .reservation .onlineBooking form input {
   cursor: pointer;
   border: none;
@@ -723,6 +781,12 @@ main .reservation .onlineBooking form input {
   padding: 10px 0;
   width: 90%;
   margin: 0 auto;
+}
+
+@media screen and (max-width: 500px) {
+  main .reservation .onlineBooking form input {
+    width: 60%;
+  }
 }
 
 main .reservation .onlineBooking button {

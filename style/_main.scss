@@ -1,12 +1,12 @@
 main{
   background: $color4;
 
-   & .discover{
+    .discover{
   display: flex;
   justify-content: center;
   align-items: center;
 
-  & .discoverText{
+   .discoverText{
     width: 50%;
     height: 400px;
     text-align: center;
@@ -17,18 +17,18 @@ main{
       width: 100%;
     }
 
-    & .box{
+     .box{
       border: 1px dashed $color3;
     }
 
-    & h2{
+     h2{
       font-family: allura, sans-serif;
       color: $color3;
       text-transform: capitalize;
       font-weight: normal;
       font-size: 2rem;
       
-      & #bigH2{
+       #bigH2{
         color: $color2;
         font-weight: bold;
         text-transform: uppercase;
@@ -36,11 +36,11 @@ main{
       }
     }
 
-    & img{
+     img{
       margin: 10px 0 20px;
     }
 
-    & p{
+     p{
       font-family: roboto, sans-serif;
       text-align: center;
 
@@ -49,18 +49,18 @@ main{
       }
     }
 
-    & #imgChefCook{
+     #imgChefCook{
       height: 70px;
       border-radius: 50px;
     }
 
-    & h3{
+     h3{
       font-family: poppins, sans-serif;
       text-transform: capitalize;
       font-weight: normal;
     }
 
-    & h4{
+     h4{
       text-transform: uppercase;
       font-weight: normal;
       font-family: poppins, sans-serif;
@@ -69,7 +69,7 @@ main{
     }
   }
 
-  & .discoverImg{
+   .discoverImg{
     background: url(../img/store-01.jpg) center/cover;
     width: 50%;
     height: 400px;
@@ -80,7 +80,7 @@ main{
   }
 }
 
-  & .menu{
+   .menu{
   background: $color4;
   min-height: 170vh;
   position: relative;
@@ -96,7 +96,7 @@ main{
     z-index: -1;
   }
 
-  & h2{
+   h2{
     text-align: center;
     color: $color3;
     font-family: allura, sans-serif;
@@ -106,25 +106,33 @@ main{
     padding: 50px 0;
   }
 
-  & #logoMenu{
+   #logoMenu{
     display: block;
     margin: 0 auto;
   }
 
-  & nav ul{
+   nav ul{
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 70%;
     margin: 50px auto;
-    text-decoration:underline;
     color: $color1;
     text-transform: capitalize;
     font-family: roboto, sans-serif;
     line-height: 5px;
+
+    li{
+      border-bottom: 1px solid $color1;
+      padding: 10px;
+
+      @media screen and (max-width:545px) {
+        font-size: 0.6rem;
+      }
+    }
   }
 
-  & .gridMenu{
+   .gridMenu{
     background: $color1;
     width: 70%;
     height: 700px;
@@ -140,7 +148,7 @@ main{
       height: 1000px;
     }
 
-    & img{
+     img{
       border-radius: 50%;
 
       @media screen and (max-width:430px) {
@@ -148,18 +156,18 @@ main{
       }
     }
 
-    & h5{
+     h5{
       text-transform: uppercase;
       margin: 0 10px;
     }
 
-    & p{
+     p{
       text-transform: capitalize;
       width: 80%;
       margin: 0 10px; 
     }
 
-    & .menuPresentation{
+     .menuPresentation{
       display: flex;
       justify-content: center;
       align-items: center;
@@ -170,7 +178,7 @@ main{
       }
     }
 
-    & .price{
+     .price{
       color: $color3;
       font-weight: bold;
       font-size: 1.3rem;
@@ -181,7 +189,7 @@ main{
       }
     }
 
-    & .menu1{
+     .menu1{
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -202,7 +210,7 @@ main{
       }
     }
 
-    & .menu2{
+     .menu2{
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -223,7 +231,7 @@ main{
       }
     }
 
-    & .menu3{
+     .menu3{
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -244,7 +252,7 @@ main{
       }
     }
 
-    & .menu4{
+     .menu4{
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -265,7 +273,7 @@ main{
       }
     }
 
-    & .menu5{
+     .menu5{
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -286,7 +294,7 @@ main{
       }
     }
 
-    & .menu6{
+     .menu6{
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -307,7 +315,7 @@ main{
       }
     }
 
-    & .menu7{
+     .menu7{
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -331,7 +339,7 @@ main{
 
     }
 
-    & .menu8{
+     .menu8{
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -340,7 +348,7 @@ main{
   }
 }
 
-  & .reservation{
+   .reservation{
   margin: 100px auto ;
   width: 70%;
   display: grid;
@@ -351,17 +359,23 @@ main{
     grid-template-columns: 1fr;
   }
   
-  & .schedules{
+   .schedules{
     background: $color2;
     color: $color1;
     text-align: center;
     padding: 30px;
 
-    & .opening{
-      border: 1px dashed $color1;
+    @media screen and (max-width:500px) {
+      padding: 10px;
     }
 
-    & h2{
+     .opening{
+      border: 1px dashed $color1;
+
+      
+    }
+
+     h2{
       font-family: allura, sans-serif;
       text-transform: capitalize;
       font-size: 2.5rem;
@@ -370,59 +384,83 @@ main{
       font-weight: normal;
       margin: 30px;
 
-      & #bigH2{
+      @media screen and (max-width:500px) {
+        font-size: 1rem;
+      }
+
+       #bigH2{
         font-family: poppins, sans-serif;
         color: $color1;
         font-size: 1.5rem;
         text-transform: uppercase;
+
+        @media screen and (max-width:500px) {
+          font-size: 1rem;
+        }
       }
     }
 
-    & img{
+     img{
       margin: 0 0 20px;
     }
 
-    & h3{
+     h3{
       color: $color3;
       font-family: poppins, sans-serif;
       font-weight: normal;
       text-transform: uppercase;
       margin: 20px 0;
+
+      @media screen and (max-width:500px) {
+        font-size: 0.7rem;
+      }
     }
 
-    & p{
+     p{
       font-family: roboto, sans-serif;
       margin: 0 0 50px;
+
+      @media screen and (max-width:500px) {
+        font-size: 0.7rem;
+      }
     }
   }
 
-  & .onlineBooking{
+   .onlineBooking{
     text-align: center;
     margin: 0 auto;
 
-    & h2{
+     h2{
       font-family: allura, sans-serif;
       text-transform: capitalize;
       font-size: 2.5rem;
       line-height: 35px;
       color: $color3;
       font-weight: normal;
-      margin: 100px 0 50px;
+      margin: 100px auto 50px;
 
-      & #bigH2{
+      @media screen and (max-width:500px) {
+        font-size: 1.2rem;
+      }
+
+       #bigH2{
         font-family: poppins, sans-serif;
         color: $color2;
         font-size: 2.5rem;
         font-weight: bold;
         text-transform: uppercase;
+
+        @media screen and (max-width:500px) {
+          font-size: 1.2rem;
+        }
       }
     }
 
-    & img{
+     img{
       margin: 0 0 50px;
     }
 
-    & form{
+     form{
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
       margin: 0 auto;
@@ -432,7 +470,7 @@ main{
         grid-template-columns: 1fr;
       }
 
-      & select{
+       select{
         cursor: pointer;
         border: none;
         border-bottom: 1px solid rgba(128, 128, 128, 0.349);
@@ -441,9 +479,13 @@ main{
         padding: 10px 0;
         width: 90%;
         margin: 0 auto;
+
+        @media screen and (max-width:500px) {
+          width: 60%;
+        }
       }
 
-      & input{
+       input{
         cursor: pointer;
         border: none;
         border-bottom: 1px solid rgba(128, 128, 128, 0.349);
@@ -452,9 +494,14 @@ main{
         padding: 10px 0;
         width: 90%;
         margin: 0 auto;
+
+        @media screen and (max-width:500px) {
+          width: 60%;
+        }
       }
     }
-    & button{
+
+     button{
       cursor: pointer;
       margin: 50px;
       text-transform: uppercase;
@@ -468,14 +515,14 @@ main{
     }
   }
 }
-  & .event{
+   .event{
     text-align: center;
 
     @media screen  and (max-width: 770px){
       display: none;
     }    
 
-    & h2{
+     h2{
       font-family: allura, sans-serif;
       text-transform: capitalize;
       font-size: 2.5rem;
@@ -488,7 +535,7 @@ main{
         margin: 0;
       }
       
-      & #bigH2{
+       #bigH2{
         font-family: poppins, sans-serif;
         color: $color1;
         font-size: 2.5rem;
@@ -497,11 +544,11 @@ main{
       }
     }
 
-    & img{
+     img{
       margin: 0 0 50px;
     }
 
-    & .gridEvent{
+     .gridEvent{
       display: grid;
       grid-template-areas:
       "event1 event3"
@@ -511,7 +558,7 @@ main{
       margin: 0 auto ;
       gap: 20px;
 
-      & .date{
+       .date{
 
         display: flex;
         flex-direction: column;
@@ -523,28 +570,28 @@ main{
         text-align: center;
         font-size: 1.5rem;
         
-        & span{
+         span{
           font-size: 1rem;
           font-weight: normal;
         }
            }
 
-      & .event1{
+       .event1{
         grid-area: event1;      
       }
 
-      & .event2{
+       .event2{
         grid-area: event2;
       }
 
-      & .pop{
+       .pop{
         background: $color1;
         display: grid;
         grid-template-columns: 40% 60%;
         text-align: left;
         height:200px;
 
-        & h3{
+         h3{
           color: $color4;
           text-transform: capitalize;
           font-family: roboto, sans-serif;
@@ -557,7 +604,7 @@ main{
           }
         }
 
-        & .descriptionEvent1, .descriptionEvent2 {
+         .descriptionEvent1, .descriptionEvent2 {
 
           @media screen  and (max-width: 1180px){
             display: flex;
@@ -568,7 +615,7 @@ main{
           }         
         }
 
-        & .descriptionEvent1 p , .descriptionEvent2 p{
+         .descriptionEvent1 p , .descriptionEvent2 p{
           color: rgba(128, 128, 128, 0.5);
           text-transform: capitalize;
           font-family: roboto, sans-serif;
@@ -577,35 +624,35 @@ main{
         }
       }
 
-      & .event3{
+       .event3{
         grid-area: event3;
         align-self: center;
       }
 
-      & .eventDate1{
+       .eventDate1{
         background: url(../img/event-01.jpg) center/cover;
         display: flex;
         justify-content: center;
         align-items: center;
 
-          & span{
+           span{
             font-weight: normal;
           }
       }
 
-      & .eventDate2{
+       .eventDate2{
         background: url(../img/event-02.jpg) center/cover;
         display: flex;
         justify-content: center;
         align-items: center;
 
-          & span{
+           span{
             font-weight: normal;
           }
       }
     }
 
-    & .event3{
+     .event3{
       background: url(../img/event-03.jpg) center/cover;
       height: 100%;
       width: 100%;
@@ -613,7 +660,7 @@ main{
       justify-content: center;
       align-items: center;
 
-    & .event3Flex{
+     .event3Flex{
       background: $color1;
       display: flex;
       flex-direction: column;
@@ -623,7 +670,7 @@ main{
       width: 90%;
       
 
-      & h3{
+       h3{
         color: $color4;
         text-transform: capitalize;
         font-family: roboto, sans-serif;
@@ -639,7 +686,7 @@ main{
       
     }
 
-    &  p{
+      p{
       color: rgba(128, 128, 128, 0.5);
       text-transform: capitalize;
       font-family: roboto, sans-serif;
@@ -654,7 +701,7 @@ main{
     }
   }
 
-  & .ceoWords{
+   .ceoWords{
     min-height: 700px;
     margin: 200px auto 0;
     position: relative;
@@ -668,7 +715,7 @@ main{
       width: 100%;     
     }
     
-    & .ceoText{
+     .ceoText{
 
     width: 70%;
     margin: 0 auto;
@@ -682,7 +729,7 @@ main{
     padding: 70px;
     z-index: 5;
 
-    & img{
+     img{
       height:70px;
       border-radius: 100px;
       position: absolute;
@@ -692,14 +739,14 @@ main{
     }
     }
     
-    & p{
+     p{
       color: $color2;
       font-family: roboto, sans-serif;
       line-height: 50px;
       margin: 20px;
     }
 
-    & h3{
+     h3{
       text-transform: capitalize;
       font-size: 1.9rem;
       font-family: roboto, sans-serif;
@@ -707,7 +754,7 @@ main{
       margin: 20px;
     }
 
-    & h4{
+     h4{
       color: $color3;
       font-family: roboto, sans-serif;
       font-weight: normal;
